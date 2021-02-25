@@ -13,6 +13,7 @@
 }
 
 body {
+    height: 100wh;
     background: url("./src/img/background.svg");
     font-family: 'Poppins', sans-serif;
 }
@@ -22,30 +23,89 @@ body {
     margin: auto;
 }
 
-/* GRID =========*/
-header{
-    display: grid;
-    grid-template-columns:4fr 4fr 4fr;
-    grid-template-rows: 20vh;
-}
-
-#logo {
-    justify-self: center;
-    grid-column-start: 2;  
-}
-
-#nav{
-
-}
-
-
 /* TITLES =========*/
 h2{
+    font-size: 20px;
     text-transform: uppercase;
     color: var(--dark-green);
     font-weight: normal;
     text-align: center;
-
 }
+
+h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--dark-green);
+    font-weight: normal;
+    text-align: center;
+}
+
+/* GRID =========*/
+header{
+    display: grid;
+    grid-template-columns:4fr 4fr 4fr;
+}
+
+#logo {
+    justify-self: center;
+    align-self: center;
+    grid-column-start: 2;  
+}
+
+#nav{
+    align-self: center;
+}
+
+
+/* HEADER =========*/
+
+header #logo img{
+    padding-top: 92px;
+    padding-bottom: 79px;
+}
+
+header #nav ul{
+    list-style: none;
+    padding-top: 142px;
+    padding-bottom: 105px;
+}
+
+/* MAIN =========*/
+
+
+#text{
+    margin-bottom: 99px;
+}
+
+
+a{
+    width: 100%;
+    text-decoration: none;
+    color: var(--dark-green);
+}
+
+a :hover{
+    color: white;
+}
+
+
+
+
+/* CARDS =========*/
+.card{
+
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+.card:hover{
+    background: var(--green);
+    transition: all.5s;
+}
+
+
+
 
 
