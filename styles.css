@@ -1,0 +1,51 @@
+
+/* GLOBAL =========*/
+
+:root{
+    --green: #819649;
+    --dark-green: #3E4825;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("./src/img/background.svg");
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+/* GRID =========*/
+header{
+    display: grid;
+    grid-template-columns:4fr 4fr 4fr;
+    grid-template-rows: 20vh;
+}
+
+#logo {
+    justify-self: center;
+    grid-column-start: 2;  
+}
+
+#nav{
+
+}
+
+
+/* TITLES =========*/
+h2{
+    text-transform: uppercase;
+    color: var(--dark-green);
+    font-weight: normal;
+    text-align: center;
+
+}
+
+
