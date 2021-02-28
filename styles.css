@@ -52,6 +52,10 @@ header #logo {
     padding: 3rem 5rem;
 }
 
+#logo img{
+    padding-left: 1.5rem;
+}
+
 /* MAIN =========*/
 
 
@@ -93,10 +97,36 @@ a{
 }
 
 
+.call h2 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.call a {
+    font-size: 0;
+  }
 
-.call a{
-    vertical-align: middle
+.call img{
+    padding-left: 1rem;
 }
 
+/* FOOTER =========*/
+footer {
+    display: flex;
+}
 
+footer .container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+footer h3 {
+    text-align: end;
+    padding-right: 1rem;
+}
+footer img{
+    padding-bottom: .5rem;
+}
 
