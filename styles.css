@@ -13,6 +13,7 @@
 }
 
 body {
+    height: 100wh;
     background: url("./src/img/background.svg");
     font-family: 'Poppins', sans-serif;
 }
@@ -22,30 +23,110 @@ body {
     margin: auto;
 }
 
-/* GRID =========*/
-header{
-    display: grid;
-    grid-template-columns:4fr 4fr 4fr;
-    grid-template-rows: 20vh;
-}
-
-#logo {
-    justify-self: center;
-    grid-column-start: 2;  
-}
-
-#nav{
-
-}
-
-
 /* TITLES =========*/
 h2{
+    font-size: 20px;
     text-transform: uppercase;
     color: var(--dark-green);
     font-weight: normal;
     text-align: center;
-
 }
 
+h3{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--dark-green);
+    font-weight: normal;
+    text-align: center;
+}
+
+
+
+/* HEADER =========*/
+
+header #logo {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+
+    padding: 3rem 5rem;
+}
+
+#logo img{
+    padding-left: 1.5rem;
+}
+
+/* MAIN =========*/
+
+
+#text{
+    padding-bottom: 3rem;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+/* CARDS =========*/
+.card{
+
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+
+.card:hover{
+    background: var(--green);
+    transition: all.5s;
+}
+
+
+.card h2:hover{
+    color:white;
+}
+
+/* CALL =========*/
+
+.call{
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+
+.call h2 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.call a {
+    font-size: 0;
+  }
+
+.call img{
+    padding-left: 1rem;
+}
+
+/* FOOTER =========*/
+footer {
+    display: flex;
+}
+
+footer .container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+footer h3 {
+    text-align: end;
+    padding-right: 1rem;
+}
+footer img{
+    padding-bottom: .5rem;
+}
 
