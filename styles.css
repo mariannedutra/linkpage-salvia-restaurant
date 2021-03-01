@@ -40,6 +40,27 @@ h3{
     text-align: center;
 }
 
+@media (max-width: 400px){
+
+    h2:first-of-type {
+        font-size: 18px;
+      }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .card h2{
+        font-size: 16px;
+    }
+
+    #logo img{
+        max-width: 200px;
+        height: auto;
+    }
+
+  }
+
 
 
 /* HEADER =========*/
@@ -92,8 +113,8 @@ a{
 /* CALL =========*/
 
 .call{
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
 }
 
 
@@ -102,6 +123,12 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  @media (max-width: 400px){
+    .call h2 {
+        font-size: 16px;
+      }
   }
   
 .call a {
@@ -115,6 +142,7 @@ a{
 /* FOOTER =========*/
 footer {
     display: flex;
+    margin-top: 3rem;
 }
 
 footer .container {
